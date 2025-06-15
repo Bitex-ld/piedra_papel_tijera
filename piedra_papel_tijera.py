@@ -6,7 +6,7 @@ print(("---Bienvenido a Piedra, Papel o Tijera---"))
 
 while True:
     try:
-        print("Elije una opcion: \n🧱Piedra = 1\n📄Papel = 2\n✂️Tijeras = 3\n🚪Salir = 0")
+        print("Elije una opcion: \n1 = 🧱 Piedra\n2 = 📄 Papel\n3 = ✂️ Tijera\n0 = 🚪 Salir del juego")
 
         #Le pedrimos asl usuario que ingrese su jugada
         jugada = int(input("Ingrese su jugada: "))
@@ -30,7 +30,9 @@ while True:
         #Comparamos las jugadas
         if jugada == jugada_pc:
             print("🤝 Resultado: Empate")
-        if jugada == 1 and jugada_pc == 3 or jugada == 2 and jugada_pc == 1 or jugada == 3 and jugada_pc == 3:
+        if (jugada == 1 and jugada_pc == 3) or\
+              (jugada == 2 and jugada_pc == 1) or\
+                  (jugada == 3 and jugada_pc == 2):
             print("🎉 Resultado: ¡Ganaste!")
         else:
             print("💀 Resultado: Perdiste")
