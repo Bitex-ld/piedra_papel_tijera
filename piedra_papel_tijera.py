@@ -18,6 +18,7 @@ print(("---Bienvenido a Piedra, Papel o Tijera---"))
 
 while True:
     try:
+        # Le muesta las opciones al usuario
         print("Elije una opcion: \n1 = 🧱 Piedra\n2 = 📄 Papel\n3 = ✂️ Tijera\n0 = 🚪 Salir del juego")
 
         # Le pedrimos asl usuario que ingrese su jugada
@@ -49,6 +50,7 @@ while True:
             print("🎉 Resultado: ¡Ganaste!")
         else:
             print("💀 Resultado: Perdiste")
-
+    # Ayuda a evitar que el programa se rompa si el usuario escribe texto o símbolos.
     except ValueError:
-         print("❗ Error: Solo puedes escribir números del 1 al 3 (o 0 para salir).")
+         print("❗ Error: Solo puedes escribir" \
+         " números del 1 al 3 (o 0 para salir).")
